@@ -48,7 +48,6 @@ cp .env.example .env
 Edituj `.env` súbor:
 ```env
 # Databáza (development)
-PRISMA_PROVIDER="sqlite"
 DATABASE_URL="file:./dev.db"
 
 # E-mail (voliteľné)
@@ -59,16 +58,13 @@ UPSTASH_REDIS_URL=""
 UPSTASH_REDIS_TOKEN=""
 ```
 
-4. **Nastav databázu**
+4. **Nastav databázu (development)**
 ```bash
-# Generuj Prisma client
-npx prisma generate
-
-# Spusti migrácie
-npx prisma migrate dev --name init
+# Pre lokálny vývoj (SQLite)
+npm run db:dev
 
 # Naplň databázu seed dátami
-npx prisma db seed
+npm run db:seed
 ```
 
 5. **Spusti development server**

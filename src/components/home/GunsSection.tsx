@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Filter } from 'lucide-react';
-import { packages, getPackagesByGunType } from '../../data/packages';
+import { getPackagesByGunType } from '../../data/packages';
 import { cn } from '../../lib/utils';
 
 const filters = [

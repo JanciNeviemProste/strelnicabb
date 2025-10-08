@@ -1,6 +1,6 @@
 import { create } from 'zustand';
-import { Package } from '../data/packages';
-import { PricingItem } from '../data/pricing';
+import type { Package } from '../data/packages';
+import type { PricingItem } from '../data/pricing';
 
 export interface Booking {
   id: string;

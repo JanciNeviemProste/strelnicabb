@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Package, Clock, Lock, Gauge } from 'lucide-react';
 import { packages } from '../../data/packages';
-import { pricing, getPricingByCategory } from '../../data/pricing';
+import { getPricingByCategory } from '../../data/pricing';
 
 export default function Packages() {
   const rangePricing = getPricingByCategory('range');
